@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA32D4E61E8C28FE00DDE182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32D4E51E8C28FE00DDE182 /* AppDelegate.swift */; };
+		DA32D4E81E8C28FE00DDE182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32D4E71E8C28FE00DDE182 /* ViewController.swift */; };
+		DA32D4EB1E8C28FE00DDE182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32D4E91E8C28FE00DDE182 /* Main.storyboard */; };
+		DA32D4EE1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA32D4EC1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld */; };
+		DA32D4F01E8C28FE00DDE182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA32D4EF1E8C28FE00DDE182 /* Assets.xcassets */; };
+		DA32D4F31E8C28FE00DDE182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA32D4F11E8C28FE00DDE182 /* LaunchScreen.storyboard */; };
+		DA32D4FE1E8C28FE00DDE182 /* Plant_SimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32D4FD1E8C28FE00DDE182 /* Plant_SimulatorTests.swift */; };
+		DA32D5091E8C28FE00DDE182 /* Plant_SimulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32D5081E8C28FE00DDE182 /* Plant_SimulatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA32D4FA1E8C28FE00DDE182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA32D4DA1E8C28FE00DDE182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32D4E11E8C28FE00DDE182;
+			remoteInfo = "Plant Simulator";
+		};
+		DA32D5051E8C28FE00DDE182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA32D4DA1E8C28FE00DDE182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32D4E11E8C28FE00DDE182;
+			remoteInfo = "Plant Simulator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA32D4E21E8C28FE00DDE182 /* Plant Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32D4E51E8C28FE00DDE182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA32D4E71E8C28FE00DDE182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA32D4EA1E8C28FE00DDE182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA32D4ED1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Plant_Simulator.xcdatamodel; sourceTree = "<group>"; };
+		DA32D4EF1E8C28FE00DDE182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA32D4F21E8C28FE00DDE182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA32D4F41E8C28FE00DDE182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32D4F91E8C28FE00DDE182 /* Plant SimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plant SimulatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32D4FD1E8C28FE00DDE182 /* Plant_SimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant_SimulatorTests.swift; sourceTree = "<group>"; };
+		DA32D4FF1E8C28FE00DDE182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA32D5041E8C28FE00DDE182 /* Plant SimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plant SimulatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA32D5081E8C28FE00DDE182 /* Plant_SimulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant_SimulatorUITests.swift; sourceTree = "<group>"; };
+		DA32D50A1E8C28FE00DDE182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA32D4DF1E8C28FE00DDE182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D4F61E8C28FE00DDE182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D5011E8C28FE00DDE182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA32D4D91E8C28FE00DDE182 = {
+			isa = PBXGroup;
+			children = (
+				DA32D4E41E8C28FE00DDE182 /* Plant Simulator */,
+				DA32D4FC1E8C28FE00DDE182 /* Plant SimulatorTests */,
+				DA32D5071E8C28FE00DDE182 /* Plant SimulatorUITests */,
+				DA32D4E31E8C28FE00DDE182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA32D4E31E8C28FE00DDE182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA32D4E21E8C28FE00DDE182 /* Plant Simulator.app */,
+				DA32D4F91E8C28FE00DDE182 /* Plant SimulatorTests.xctest */,
+				DA32D5041E8C28FE00DDE182 /* Plant SimulatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA32D4E41E8C28FE00DDE182 /* Plant Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				DA32D4E51E8C28FE00DDE182 /* AppDelegate.swift */,
+				DA32D4E71E8C28FE00DDE182 /* ViewController.swift */,
+				DA32D4E91E8C28FE00DDE182 /* Main.storyboard */,
+				DA32D4EF1E8C28FE00DDE182 /* Assets.xcassets */,
+				DA32D4F11E8C28FE00DDE182 /* LaunchScreen.storyboard */,
+				DA32D4F41E8C28FE00DDE182 /* Info.plist */,
+				DA32D4EC1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld */,
+			);
+			path = "Plant Simulator";
+			sourceTree = "<group>";
+		};
+		DA32D4FC1E8C28FE00DDE182 /* Plant SimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA32D4FD1E8C28FE00DDE182 /* Plant_SimulatorTests.swift */,
+				DA32D4FF1E8C28FE00DDE182 /* Info.plist */,
+			);
+			path = "Plant SimulatorTests";
+			sourceTree = "<group>";
+		};
+		DA32D5071E8C28FE00DDE182 /* Plant SimulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA32D5081E8C28FE00DDE182 /* Plant_SimulatorUITests.swift */,
+				DA32D50A1E8C28FE00DDE182 /* Info.plist */,
+			);
+			path = "Plant SimulatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA32D4E11E8C28FE00DDE182 /* Plant Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32D50D1E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant Simulator" */;
+			buildPhases = (
+				DA32D4DE1E8C28FE00DDE182 /* Sources */,
+				DA32D4DF1E8C28FE00DDE182 /* Frameworks */,
+				DA32D4E01E8C28FE00DDE182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plant Simulator";
+			productName = "Plant Simulator";
+			productReference = DA32D4E21E8C28FE00DDE182 /* Plant Simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA32D4F81E8C28FE00DDE182 /* Plant SimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32D5101E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorTests" */;
+			buildPhases = (
+				DA32D4F51E8C28FE00DDE182 /* Sources */,
+				DA32D4F61E8C28FE00DDE182 /* Frameworks */,
+				DA32D4F71E8C28FE00DDE182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA32D4FB1E8C28FE00DDE182 /* PBXTargetDependency */,
+			);
+			name = "Plant SimulatorTests";
+			productName = "Plant SimulatorTests";
+			productReference = DA32D4F91E8C28FE00DDE182 /* Plant SimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA32D5031E8C28FE00DDE182 /* Plant SimulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA32D5131E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorUITests" */;
+			buildPhases = (
+				DA32D5001E8C28FE00DDE182 /* Sources */,
+				DA32D5011E8C28FE00DDE182 /* Frameworks */,
+				DA32D5021E8C28FE00DDE182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA32D5061E8C28FE00DDE182 /* PBXTargetDependency */,
+			);
+			name = "Plant SimulatorUITests";
+			productName = "Plant SimulatorUITests";
+			productReference = DA32D5041E8C28FE00DDE182 /* Plant SimulatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA32D4DA1E8C28FE00DDE182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "梁思地";
+				TargetAttributes = {
+					DA32D4E11E8C28FE00DDE182 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E499ZXTYV7;
+						ProvisioningStyle = Automatic;
+					};
+					DA32D4F81E8C28FE00DDE182 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E499ZXTYV7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA32D4E11E8C28FE00DDE182;
+					};
+					DA32D5031E8C28FE00DDE182 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E499ZXTYV7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA32D4E11E8C28FE00DDE182;
+					};
+				};
+			};
+			buildConfigurationList = DA32D4DD1E8C28FE00DDE182 /* Build configuration list for PBXProject "Plant Simulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA32D4D91E8C28FE00DDE182;
+			productRefGroup = DA32D4E31E8C28FE00DDE182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA32D4E11E8C28FE00DDE182 /* Plant Simulator */,
+				DA32D4F81E8C28FE00DDE182 /* Plant SimulatorTests */,
+				DA32D5031E8C28FE00DDE182 /* Plant SimulatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA32D4E01E8C28FE00DDE182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32D4F31E8C28FE00DDE182 /* LaunchScreen.storyboard in Resources */,
+				DA32D4F01E8C28FE00DDE182 /* Assets.xcassets in Resources */,
+				DA32D4EB1E8C28FE00DDE182 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D4F71E8C28FE00DDE182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D5021E8C28FE00DDE182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA32D4DE1E8C28FE00DDE182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32D4E81E8C28FE00DDE182 /* ViewController.swift in Sources */,
+				DA32D4E61E8C28FE00DDE182 /* AppDelegate.swift in Sources */,
+				DA32D4EE1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D4F51E8C28FE00DDE182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32D4FE1E8C28FE00DDE182 /* Plant_SimulatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA32D5001E8C28FE00DDE182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA32D5091E8C28FE00DDE182 /* Plant_SimulatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA32D4FB1E8C28FE00DDE182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA32D4E11E8C28FE00DDE182 /* Plant Simulator */;
+			targetProxy = DA32D4FA1E8C28FE00DDE182 /* PBXContainerItemProxy */;
+		};
+		DA32D5061E8C28FE00DDE182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA32D4E11E8C28FE00DDE182 /* Plant Simulator */;
+			targetProxy = DA32D5051E8C28FE00DDE182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA32D4E91E8C28FE00DDE182 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA32D4EA1E8C28FE00DDE182 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA32D4F11E8C28FE00DDE182 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA32D4F21E8C28FE00DDE182 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA32D50B1E8C28FE00DDE182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA32D50C1E8C28FE00DDE182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA32D50E1E8C28FE00DDE182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant Simulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-Simulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DA32D50F1E8C28FE00DDE182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant Simulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-Simulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DA32D5111E8C28FE00DDE182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant SimulatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-SimulatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plant Simulator.app/Plant Simulator";
+			};
+			name = Debug;
+		};
+		DA32D5121E8C28FE00DDE182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant SimulatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-SimulatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plant Simulator.app/Plant Simulator";
+			};
+			name = Release;
+		};
+		DA32D5141E8C28FE00DDE182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant SimulatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-SimulatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Plant Simulator";
+			};
+			name = Debug;
+		};
+		DA32D5151E8C28FE00DDE182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E499ZXTYV7;
+				INFOPLIST_FILE = "Plant SimulatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sidiliang.Plant-SimulatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Plant Simulator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA32D4DD1E8C28FE00DDE182 /* Build configuration list for PBXProject "Plant Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32D50B1E8C28FE00DDE182 /* Debug */,
+				DA32D50C1E8C28FE00DDE182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA32D50D1E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32D50E1E8C28FE00DDE182 /* Debug */,
+				DA32D50F1E8C28FE00DDE182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA32D5101E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32D5111E8C28FE00DDE182 /* Debug */,
+				DA32D5121E8C28FE00DDE182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA32D5131E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA32D5141E8C28FE00DDE182 /* Debug */,
+				DA32D5151E8C28FE00DDE182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA32D4EC1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA32D4ED1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodel */,
+			);
+			currentVersion = DA32D4ED1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodel */;
+			path = Plant_Simulator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA32D4DA1E8C28FE00DDE182 /* Project object */;
+}
