@@ -14,10 +14,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tmpTestBtn: UIButton!
     @IBAction func testBtnTouched(_ sender: UIButton) {
-        environment.dayNightChange(imageview: outsidePic)
+//        environment.dayNightChange(imageview: outsidePic)
+        changeOutsidePic()
     }
     @IBOutlet weak var outsidePic: UIImageView!
     
+    @IBOutlet weak var nightOutsidePic: UIImageView!
     @IBOutlet weak var window: UIButton!
     
     
@@ -34,12 +36,24 @@ class ViewController: UIViewController {
     }
     
     func changeOutsidePic(){
-        outsidePic.setValue(#imageLiteral(resourceName: "night.png"), forKey: "daynight")
-    }
+        if(environment.isDay){
+            UIView.animate(withDuration: 1, delay: 1 ,animations: {
+                self.nightOutsidePic.alpha=1
+            })
+            environment.isDay = false
+        }else{
+            UIView.animate(withDuration: 1, delay: 1, animations: {
+                self.nightOutsidePic.alpha=0
+            })
+            environment.isDay = true
+
+        }
+
+           }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+                // Do any additional setup after loading the view, typically from a nib.
         
     }
 
@@ -56,17 +70,16 @@ class ViewController: UIViewController {
 
 class Environment{
     
-    var time = 0
+    var timeOfADay = 0
+    var Days = 0
     var temp = 25
     var isDay = true
-    func dayNightChange(imageview:UIImageView){
-        if(isDay){
-            imageview.image = #imageLiteral(resourceName: "night.png")//night
-            isDay = false
-        }else{
-            imageview.image = #imageLiteral(resourceName: "day.png")//day
-            isDay = true
-        }
+    func getTimeOfTheDay(){
+        let now = NSDate()
+        let timeInterval:TimeInterval = now.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        let
+
     }
 
 }

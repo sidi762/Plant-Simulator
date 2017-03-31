@@ -25,6 +25,10 @@
                                 <rect key="frame" x="24" y="43" width="326" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night.png" translatesAutoresizingMaskIntoConstraints="NO" id="GMp-Da-jCy">
+                                <rect key="frame" x="24" y="43" width="326" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s1-jn-rhh">
                                 <rect key="frame" x="24" y="43" width="326" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,6 +60,7 @@
                         <color key="backgroundColor" red="0.98952445221176732" green="1" blue="0.8956601231928818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="nightOutsidePic" destination="GMp-Da-jCy" id="b2p-KF-Bb5"/>
                         <outlet property="outsidePic" destination="WmN-0e-D20" id="XtQ-n0-1EP"/>
                         <outlet property="tmpTestBtn" destination="WYi-kR-5Sn" id="yXu-i4-3wo"/>
                         <outlet property="window" destination="1s1-jn-rhh" id="QZV-k4-aFb"/>
@@ -71,5 +76,6 @@
         <image name="day.png" width="689" height="466"/>
         <image name="desk.png" width="646" height="467"/>
         <image name="flowerpot.png" width="565" height="500"/>
+        <image name="night.png" width="689" height="466"/>
     </resources>
 </document>
