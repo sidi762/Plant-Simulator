@@ -22,6 +22,8 @@
 		DA32D51F1E8C2EBC00DDE182 /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = DA32D51E1E8C2EBC00DDE182 /* desk.png */; };
 		DA32D5221E8C3ED600DDE182 /* day.png in Resources */ = {isa = PBXBuildFile; fileRef = DA32D5201E8C3ED600DDE182 /* day.png */; };
 		DA32D5231E8C3ED600DDE182 /* night.png in Resources */ = {isa = PBXBuildFile; fileRef = DA32D5211E8C3ED600DDE182 /* night.png */; };
+		DA9A4D4D1E95504E0082675D /* nightinterior.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A4D4C1E95504E0082675D /* nightinterior.png */; };
+		DA9A4D4F1E9554B50082675D /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A4D4E1E9554B50082675D /* light.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		DA32D51E1E8C2EBC00DDE182 /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desk.png; path = ../../../../Study/Biology/PlantSimProject/desk.png; sourceTree = "<group>"; };
 		DA32D5201E8C3ED600DDE182 /* day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = day.png; path = ../../../../Study/Biology/PlantSimProject/day.png; sourceTree = "<group>"; };
 		DA32D5211E8C3ED600DDE182 /* night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = night.png; path = ../../../../Study/Biology/PlantSimProject/night.png; sourceTree = "<group>"; };
+		DA9A4D4C1E95504E0082675D /* nightinterior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nightinterior.png; path = ../../../../Study/Biology/PlantSimProject/nightinterior.png; sourceTree = "<group>"; };
+		DA9A4D4E1E9554B50082675D /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light.png; path = ../../../../Study/Biology/PlantSimProject/light.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				DA32D4E71E8C28FE00DDE182 /* ViewController.swift */,
 				DA32D51A1E8C2D4000DDE182 /* opened window.png */,
 				DA32D4E91E8C28FE00DDE182 /* Main.storyboard */,
+				DA9A4D4E1E9554B50082675D /* light.png */,
 				DA32D5201E8C3ED600DDE182 /* day.png */,
 				DA32D5211E8C3ED600DDE182 /* night.png */,
 				DA32D51E1E8C2EBC00DDE182 /* desk.png */,
@@ -124,6 +129,7 @@
 				DA32D4EF1E8C28FE00DDE182 /* Assets.xcassets */,
 				DA32D5181E8C2BA000DDE182 /* flowerpotwithsoil.png */,
 				DA32D5161E8C2A0300DDE182 /* flowerpot.png */,
+				DA9A4D4C1E95504E0082675D /* nightinterior.png */,
 				DA32D4F11E8C28FE00DDE182 /* LaunchScreen.storyboard */,
 				DA32D4F41E8C28FE00DDE182 /* Info.plist */,
 				DA32D4EC1E8C28FE00DDE182 /* Plant_Simulator.xcdatamodeld */,
@@ -266,6 +272,8 @@
 				DA32D51D1E8C2D4500DDE182 /* closed window.png in Resources */,
 				DA32D5171E8C2A0300DDE182 /* flowerpot.png in Resources */,
 				DA32D5191E8C2BA000DDE182 /* flowerpotwithsoil.png in Resources */,
+				DA9A4D4D1E95504E0082675D /* nightinterior.png in Resources */,
+				DA9A4D4F1E9554B50082675D /* light.png in Resources */,
 				DA32D4EB1E8C28FE00DDE182 /* Main.storyboard in Resources */,
 				DA32D5231E8C3ED600DDE182 /* night.png in Resources */,
 				DA32D51B1E8C2D4000DDE182 /* opened window.png in Resources */,
@@ -548,6 +556,7 @@
 				DA32D50F1E8C28FE00DDE182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA32D5101E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +565,7 @@
 				DA32D5121E8C28FE00DDE182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA32D5131E8C28FE00DDE182 /* Build configuration list for PBXNativeTarget "Plant SimulatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +574,7 @@
 				DA32D5151E8C28FE00DDE182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

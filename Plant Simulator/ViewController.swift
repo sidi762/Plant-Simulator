@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nightOutsidePic: UIImageView!
     @IBOutlet weak var window: UIButton!
-    
+    @IBOutlet weak var lightshadowimage: UIImageView!
+
     
     @IBAction func windowTouched(_ sender: UIButton) {
         windowStateChange()
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
         window.setImage(#imageLiteral(resourceName: "closed window.png"), for: UIControlState.normal)//close window
 
     }
-    func timeRuns(){
+        func timeRuns(){
         
         let changePicInterval = Int(timePassInterval)
         runningSecond = runningSecond + 1
@@ -61,12 +62,14 @@ class ViewController: UIViewController {
         if(environment.isDay){
             UIView.animate(withDuration: 1, delay: 1 ,animations: {
                 self.nightOutsidePic.alpha=1
+                self.lightshadowimage.alpha = 1
             })
             environment.isDay = false
             print("is night")
         }else{
             UIView.animate(withDuration: 1, delay: 1, animations: {
                 self.nightOutsidePic.alpha=0
+                self.lightshadowimage.alpha = 0
             })
             environment.isDay = true
             print("is day")
