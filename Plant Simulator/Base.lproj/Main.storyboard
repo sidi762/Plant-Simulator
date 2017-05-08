@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -27,6 +27,10 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night.png" translatesAutoresizingMaskIntoConstraints="NO" id="GMp-Da-jCy">
                                 <rect key="frame" x="24" y="43" width="326" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightinterior.png" translatesAutoresizingMaskIntoConstraints="NO" id="jps-lK-DbQ">
+                                <rect key="frame" x="-3" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s1-jn-rhh">
@@ -40,10 +44,6 @@
                                     <action selector="windowTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="jf9-hG-gKc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightinterior.png" translatesAutoresizingMaskIntoConstraints="NO" id="jps-lK-DbQ">
-                                <rect key="frame" x="-3" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="desk.png" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-yu-Z3L">
                                 <rect key="frame" x="-33" y="444" width="440" height="359"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,14 +52,6 @@
                                 <rect key="frame" x="95" y="371" width="184" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYi-kR-5Sn">
-                                <rect key="frame" x="95" y="318" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tmp Test Btn"/>
-                                <connections>
-                                    <action selector="testBtnTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="cnO-er-oCt"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="温度计.png" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-JQ-xUN">
                                 <rect key="frame" x="290" y="466" width="54" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,30 +64,245 @@
                                 <rect key="frame" x="290" y="508" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water.png" translatesAutoresizingMaskIntoConstraints="NO" id="1sS-2u-q5Z">
+                                <rect key="frame" x="94" y="364" width="178" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ0-Ut-eLr">
+                                <rect key="frame" x="35" y="579" width="305" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heateron.png"/>
+                                <connections>
+                                    <action selector="heaterStateChange:" destination="BYZ-38-t0r" eventType="touchDown" id="nxv-nP-Xmo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dock.png" translatesAutoresizingMaskIntoConstraints="NO" id="4SS-CX-OhV">
+                                <rect key="frame" x="-63" y="282" width="501" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGy-Ve-bGV">
+                                <rect key="frame" x="62" y="317" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="waterBtn.png"/>
+                                <connections>
+                                    <action selector="waterClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="KMm-Vc-LMM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfL-CC-yG0">
+                                <rect key="frame" x="169" y="317" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="seedBtn.png"/>
+                                <connections>
+                                    <action selector="SeedPlaced:" destination="BYZ-38-t0r" eventType="touchDown" id="gwT-T1-fc2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liK-MQ-qEq">
+                                <rect key="frame" x="169" y="317" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="infoBtn.png"/>
+                                <connections>
+                                    <action selector="infoClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="DGv-6u-8kN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0n-Zc-8RA">
+                                <rect key="frame" x="280" y="317" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="resetBtn.png"/>
+                                <connections>
+                                    <action selector="resetClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="uxr-HH-wC5"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bud.png" translatesAutoresizingMaskIntoConstraints="NO" id="sBh-zb-sai">
+                                <rect key="frame" x="117" y="370" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvQ-A7-dXQ">
+                                <rect key="frame" x="117" y="216" width="390" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="水壶.png"/>
+                                <connections>
+                                    <action selector="stopWater:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJs-7C-k1H"/>
+                                    <action selector="water:" destination="BYZ-38-t0r" eventType="touchDown" id="U9x-c0-rDh"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toomuchwater.png" translatesAutoresizingMaskIntoConstraints="NO" id="XHD-dJ-fj7">
+                                <rect key="frame" x="-18" y="380" width="410" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYi-kR-5Sn">
+                                <rect key="frame" x="91" y="5" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tmp Test Btn"/>
+                                <connections>
+                                    <action selector="testBtnTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="cnO-er-oCt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mb-BU-uqR">
+                                <rect key="frame" x="62" y="432" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="soilBtn.png"/>
+                                <connections>
+                                    <action selector="AddSoilTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="3BJ-ni-4zK"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.98999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infoTab.png" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-Nh-0Ia">
+                                <rect key="frame" x="19" y="104" width="340" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature outdoor：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1V-mG-rrU">
+                                <rect key="frame" x="35" y="230" width="204" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature indoor：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dp7-7k-fxD">
+                                <rect key="frame" x="35" y="259" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set heater temperature：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-aA-I4K">
+                                <rect key="frame" x="35" y="288" width="211" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set simulation rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flp-tj-VB6">
+                                <rect key="frame" x="35" y="317" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk6-mf-aMS">
+                                <rect key="frame" x="281" y="259" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-sP-O4U">
+                                <rect key="frame" x="129" y="180" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="℃"/>
+                                    <segment title="℉"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changedCF:" destination="BYZ-38-t0r" eventType="valueChanged" id="I8z-Mh-fBl"/>
+                                </connections>
+                            </segmentedControl>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJP-Ga-WwD">
+                                <rect key="frame" x="281" y="230" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0-80（℃）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-Ng-cdS">
+                                <rect key="frame" x="238" y="282" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="heaterSetted:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hFN-F2-XQV"/>
+                                </connections>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1X-3X" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FSw-gi-eZf">
+                                <rect key="frame" x="238" y="314" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="simRateSetted:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DYt-aY-AQn"/>
+                                </connections>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViH-BN-6Kb">
+                                <rect key="frame" x="173" y="337" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXQ-FU-3H0">
+                                <rect key="frame" x="315" y="138" width="17" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="closeBtn.png"/>
+                                <connections>
+                                    <action selector="closeInfoClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="EZH-ie-38X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.94924665178571432" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="touchedUpInsideControl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERT-zY-C8h"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="addSoilBtn" destination="4mb-BU-uqR" id="c7K-dQ-e0z"/>
+                        <outlet property="closeTabBtn" destination="lXQ-FU-3H0" id="4if-b1-W1g"/>
+                        <outlet property="controlUI" destination="8bC-Xf-vdC" id="GBp-dL-aZm"/>
+                        <outlet property="flowerpot" destination="euF-m3-g6j" id="gAa-VY-IC1"/>
+                        <outlet property="heater" destination="tQ0-Ut-eLr" id="H6G-Dn-fvC"/>
+                        <outlet property="infoBtn" destination="liK-MQ-qEq" id="BW0-6q-09p"/>
+                        <outlet property="infoTab" destination="fdt-Nh-0Ia" id="4t8-pT-509"/>
                         <outlet property="lightshadowimage" destination="jps-lK-DbQ" id="Ym5-xd-g8i"/>
                         <outlet property="nightOutsidePic" destination="GMp-Da-jCy" id="b2p-KF-Bb5"/>
                         <outlet property="outsidePic" destination="WmN-0e-D20" id="XtQ-n0-1EP"/>
+                        <outlet property="plantImage" destination="sBh-zb-sai" id="t67-Nb-Cib"/>
+                        <outlet property="resetBtn" destination="U0n-Zc-8RA" id="nNc-UG-TI4"/>
+                        <outlet property="seedBtn" destination="lfL-CC-yG0" id="HA0-wb-KIF"/>
+                        <outlet property="setHeater" destination="mEd-Ng-cdS" id="3ET-m7-F6m"/>
+                        <outlet property="setHeaterleb" destination="SfV-aA-I4K" id="zjh-o8-BuL"/>
+                        <outlet property="setRatelabe" destination="flp-tj-VB6" id="RaU-Vn-kkW"/>
+                        <outlet property="setSimRate" destination="FSw-gi-eZf" id="qmT-bN-248"/>
+                        <outlet property="tempC" destination="ZiL-l2-Yw3" id="nQP-W1-42a"/>
+                        <outlet property="tempF" destination="Rfc-aj-Gfa" id="Hp3-sT-lgM"/>
+                        <outlet property="tempIndoor" destination="Tk6-mf-aMS" id="Wy9-SW-BfZ"/>
+                        <outlet property="tempIndorlabe" destination="dp7-7k-fxD" id="R4q-7a-ov6"/>
+                        <outlet property="tempOutdoor" destination="FJP-Ga-WwD" id="ydd-ZW-PzY"/>
+                        <outlet property="tempOutdorlabe" destination="N1V-mG-rrU" id="xId-pO-sOo"/>
+                        <outlet property="tempSecg" destination="uoR-sP-O4U" id="vf2-LE-pVx"/>
+                        <outlet property="tempsurface" destination="fCk-JQ-xUN" id="DvF-kf-tpV"/>
                         <outlet property="tmpTestBtn" destination="WYi-kR-5Sn" id="yXu-i4-3wo"/>
+                        <outlet property="tooMuchWaterInSoil" destination="XHD-dJ-fj7" id="8c8-wT-sJY"/>
+                        <outlet property="waterBtn" destination="mGy-Ve-bGV" id="gWT-2a-aQu"/>
+                        <outlet property="waterInSoil" destination="1sS-2u-q5Z" id="kaE-zR-aH3"/>
+                        <outlet property="waterPot" destination="fvQ-A7-dXQ" id="3hN-2T-fav"/>
                         <outlet property="window" destination="1s1-jn-rhh" id="QZV-k4-aFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
+            <point key="canvasLocation" x="167.19999999999999" y="126.38680659670166"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bud.png" width="115" height="191"/>
+        <image name="closeBtn.png" width="25" height="25"/>
         <image name="closed window.png" width="433" height="375"/>
         <image name="day.png" width="689" height="466"/>
         <image name="desk.png" width="646" height="467"/>
+        <image name="dock.png" width="320" height="91"/>
         <image name="err.png" width="169" height="80"/>
         <image name="flowerpot.png" width="565" height="500"/>
+        <image name="heateron.png" width="600" height="600"/>
+        <image name="infoBtn.png" width="832" height="832"/>
+        <image name="infoTab.png" width="721" height="685"/>
         <image name="night.png" width="689" height="466"/>
         <image name="nightinterior.png" width="365" height="662"/>
+        <image name="resetBtn.png" width="460" height="460"/>
+        <image name="seedBtn.png" width="413" height="413"/>
+        <image name="soilBtn.png" width="413" height="413"/>
+        <image name="toomuchwater.png" width="565" height="500"/>
+        <image name="water.png" width="236" height="236"/>
+        <image name="waterBtn.png" width="398" height="398"/>
+        <image name="水壶.png" width="720" height="500"/>
         <image name="温度计.png" width="210" height="210"/>
     </resources>
 </document>
